@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Crown Penang</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-9497f5b9.ico">
+    
+        
+    <link rel="prefetch" href="/assets/scene_loading_desktop-53a3a7a6.gif">
+    <link rel="prefetch" href="/assets/scene_loading_mobile-b49b5206.gif">
+    <link rel="prefetch" href="/assets/crown_logo_desktop-c1537339.png">
+    <link rel="prefetch" href="/assets/crown_logo_mobile-df163f39.png">
+  <script type="module" crossorigin src="/assets/index-1747a868.js"></script>
+  <link rel="stylesheet" href="/assets/index-44a268a7.css">
+</head>
+
+<body>
+    <div id="scene-loading">
+        <div class="loading-icon"></div>
+        <div class="logo"></div>
+    </div>
+    <div id="entrance-page">
+        <img src="/assets/entrance_page-b667a4ff.jpg" alt="entrance_page_img" />
+        <p>
+            <img src="/assets/crown_logo_mobile-df163f39.png" width="114" height="109" />
+            <br /><br />
+            <span class="title">WELCOME</span>
+            <br />
+            Take a step into exceptionally styled interiors and experience the exquisite designs
+            of an eye-catching development by Ivory Properties.
+            <br />
+            <br />
+            <button id="entrance-page-button">ENTER</button>
+        </p>
+    </div>
+    <div id="scene-name"></div>
+    <div id="panorama-content"></div>
+    <div id="map">
+        <div id="map-background"></div>
+        <button id="map-close-button"></button>
+        <div id="map-viewport">
+            <div id="map-content">
+                <div id="map-zoomable" class="unselectable">
+                    <img id="map-content-image" class="content-image" src="" />
+                    <div id="content-current-location-indicator" class="mini-map">
+                        <div class="indicator-direction"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="material-info">
+        <div class="background"></div>
+        <button id="material-info-close-button"></button>
+        <div id="material-info-title" class="unselectable"></div>
+        <div id="material-info-viewport">
+            <div id="material-info-content">
+                <div id="material-info-zoomable" class="unselectable">
+                    <img id="material-content-image" class="content-image" src="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="overlay-video">
+        <div class="background"></div>
+        <button id="overlay-video-close-button"></button>
+        <div id="overlay-video-content">
+            <video id="video-player" width="100%" height="100%" controls loop controlsList="nodownload">
+                <source src="/assets/the_crown-d43f8d51.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div id="overlay-sequence-viewer">
+        <div class="background"></div>
+        <button id="overlay-sequence-viewer-close-button"></button>
+        <div id="overlay-sequence-viewer-loading"></div>
+        <div id="overlay-sequence-viewer-content"></div>
+    </div>
+    <div id="loading-icon"></div>
+    <div id="tools-menu">
+        <button id="open-menu-btn" class="item open-menu"></button>
+        <button id="toggle-daytime-btn"></button>
+        <button id="fullscreen-btn" class="item fullscreen"></button>
+        <button id="hide-all-gui-btn" class="item hide-all-gui"></button>
+    </div>
+    <div id="navigation-menu">
+        <div id="company-logo"></div>
+        <div id="nav-viewport">
+            <div id="nav-viewport-track">
+                <div id="nav-viewport-track-slider"></div>
+            </div>
+            <div id="nav-viewport-content">
+                <button id="grand-lobby" class="item" data-target-url="#grandlobby">
+                    <span class="icon grand-lobby"></span>
+                    <span class="label">GRAND LOBBY</span>
+                </button>
+                <button id="car-park" class="item" data-target-url="#carpark">
+                    <span class="icon car-park"></span>
+                    <span class="label">CAR PARK</span>
+                </button>
+                <button id="show-unit" class="item" data-target-url="#showunit">
+                    <span class="icon show-unit"></span>
+                    <span class="label">SHOW UNIT</span>
+                </button>
+                <button id="sky-lounge" class="item" data-target-url="#skylounge">
+                    <span class="icon sky-lounge"></span>
+                    <span class="label">SKY LOUNGE</span>
+                </button>
+                <button id="rooftop-club" class="item" data-target-url="#rooftopclub">
+                    <span class="icon rooftop-club"></span>
+                    <span class="label">ROOFTOP CLUB</span>
+                </button>
+                <button id="level-view" class="item" data-target-url="#levelview">
+                    <span class="icon level-view"></span>
+                    <span class="label">LEVEL VIEW</span>
+                </button>
+                <button id="video" class="item">
+                    <span class="icon video"></span>
+                    <span class="label">VIDEO</span>
+                </button>
+                <button id="exterior-view" class="item">
+                    <span class="icon icon-custom model-view"></span>
+                    <span class="label">EXTERIOR</span>
+                </button>
+                <button id="register" class="item">
+                    <span class="icon register"></span>
+                    <span class="label">REGISTER</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="level-view-menu">
+        <div id="clm-viewport">
+            <div id="clm-viewport-track">
+                <div id="clm-viewport-track-slider"></div>
+            </div>
+            <div id="clm-viewport-content">
+                <button id="ctv-36-btn" class="item" data-target-url="#levelview.lv36">
+                    <span class="icon"></span>
+                    <span class="label">LEVEL 36<br>( SHOW UNIT )</span>
+                </button>
+                <button id="ctv-30-btn" class="item" data-target-url="#levelview.lv30">
+                    <span class="icon"></span>
+                    <span class="label"><span>LEVEL 30</span>
+                </button>
+                <button id="ctv-25-btn" class="item" data-target-url="#levelview.lv25">
+                    <span class="icon"></span>
+                    <span class="label"><span>LEVEL 25</span>
+                </button>
+                <button id="ctv-20-btn" class="item" data-target-url="#levelview.lv20">
+                    <span class="icon"></span>
+                    <span class="label"><span>LEVEL 20</span>
+                </button>
+                <button id="ctv-15-btn" class="item" data-target-url="#levelview.lv15">
+                    <span class="icon"></span>
+                    <span class="label"><span>LEVEL 15</span>
+                </button>
+                <button id="ctv-10-btn" class="item" data-target-url="#levelview.lv10">
+                    <span class="icon"></span>
+                    <span class="label"><span>LEVEL 10</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <button id="level-view-button"></button>
+
+    
+    
+</body>
+
+</html>
